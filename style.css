@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@600&family=Sansita+Swashed:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+   /* background-color: #af11db; */
+   background: black;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+ .sidebar{
+  width: 150px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+  position: fixed;
+  
+}
+
+.sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: start;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+
+.sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+.sidebar ul li a .fas{
+  width: 25px;
+}
+
+.sidebar ul li:hover{
+  background-color: #594f8d;
+}
+    
+.sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.developer-text{
+  margin-left: 25px;
+}
+
+
+.name img{
+  border-radius: 50%;
+}
+
+.name{
+  color:white;
+  width: 300px;
+  margin-right: 200px;
+  margin-left: 80px;
+}
+.name p{
+  
+  margin-top:10px ;
+}
+
+.name:hover {
+  color: cyan;
+}
+
+.name img{
+  width: 250px;
+  height: 250px
+}
+
+
+
+.main_content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 150px;
+  height: 100vh;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 0%;
+    display: none;
+  }
+  .main_content{
+    margin-left: 0%;
+    
+  }
+  .Sphere{
+    visibility: hidden;
+  }
+}
+
+/* ==================================SKills Section=========================================================*/
+
+#Page-2{
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin-left: 150px;
+  background: #2B2727;
+  text-transform: uppercase;
+  display: flex;
+  color: whitesmoke;
+  
+}
+
+.skills-design{
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  opacity: 0.4;
+  text-transform: lowercase;
+  font-size: 20px;
+  margin-bottom: 50px;
+  
+
+}
+
+.skills-info{
+  min-width: 500px;
+
+  margin: 25px;
+}
+
+h3{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills{
+  min-width: 500px;
+  margin: 60px;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0,0.2);
+  display:inline-table;
+  justify-content: end;
+}
+
+.skills li{
+  margin: 20px;
+  padding: 10px;
+}
+
+.bar{
+  background: #353b48;
+  display: block;
+  height: 10px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.12), 0 10px 10px rgba(0, 0, 0,0.24);
+  transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1);
+
+}
+
+.bar:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0,0.21);
+
+}
+
+.bar span{
+  height: 10px;
+  float: left;
+  background: linear-gradient(135deg, rgba(236,0,140,1) , rgba(252,103,103,1));
+
+}
+
+.html{
+  width:90% ;
+  animation: html 3s ;
+}
+.css{
+  width:70% ;
+  animation: css 3s ;
+}
+.java{
+  width:68% ;
+  animation: java 3s ;
+}
+.nodejs{
+  width:65% ;
+  animation: nodejs 3s ;
+}
+.react{
+  width:75% ;
+  animation: react 3s ;
+}
+.github{
+  width:65% ;
+  animation: github 3s ;
+}
+.javascript{
+  width:75% ;
+  animation: javascript 3s 
+}
+
+@keyframes html{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%
+  }
+}
+
+@keyframes css{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+    
+  }
+}
+
+@keyframes javascript{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 75%;
+    
+  }
+}
+
+@keyframes java{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 68%;
+    
+  }
+}
+
+
+@keyframes nodejs{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 65%;
+    
+  }
+}
+
+@keyframes react{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 75%;
+    
+  }
+}
+
+@keyframes github{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 65%;
+    
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 0%;
+    display: none;
+  }
+  #Page-2{
+    margin-left: 0%;
+    display: block;
+  }
+
+
+}
+
+.dancing-skills{
+  font-size: 45px;
+  color: rgb(13, 252, 252);
+  padding: 4px ;
+  display: table-cell;
+  text-shadow: 0 15px 25px rgb(51, 248, 238);
+  text-transform: uppercase;
+}
+
+.dancing-skills:hover {
+  animation: dance 0.5s ;
+  cursor: pointer;
+}
+
+@keyframes dance{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-20px);
+  }
+  75%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+/*=====================================Certified Developer==========================================*/
+
+#Page-3{
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin-left: 150px;
+  background: #171717;
+  color: white;
+  text-transform: uppercase;
+  height: 700px;
+  
+  
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 0%;
+    display: none;
+  }
+  #Page-3{
+    margin-left: 0%;
+    display: block;
+  }
+
+
+}
+
+.certified-title img{
+  height: 200px;
+  padding-left: 10px;
+  padding-top: 10px;
+  
+
+}
+
+.certified-title {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.certificates img{
+  height: 70px;
+  margin-left:10vw ;
+}
+
+.certificates{
+  padding-top: 30px;
+  background-color:#171717;
+  font-size: 35px;
+}
+
+.certificate-name{
+  position: relative;
+  bottom: 20px;
+  color: #f3f5f9;
+}
+
+.certificate-name:hover{
+  animation: opaque 3s ;
+  cursor: pointer;
+}
+
+@keyframes opaque {
+  0%{
+    opacity: 0.1; 
+  }
+  100%{
+    opacity: 1;
+  }
+
+}
+
+.java:hover{
+  color: red;
+}
+
+.data-structure:hover{
+  color: green;
+}
+
+.front-end:hover{
+  color: cyan;
+}
+
+.back-end:hover{
+  color: lightgoldenrodyellow;
+}
+
+/*=====================================Contact===========================================================*/
+#Page-6{
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  list-style: none;
+  padding: 0;
+  margin-left: 150px;
+  background:black;
+  text-transform: uppercase;
+  display: flex;
+  color: white;
+  
+}
+
+.contact-design{
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  opacity: 0.4;
+  text-transform: lowercase;
+  font-size: 20px;
+  
+
+}
+.contact-para{
+  margin-left: 5%;
+  display: flex;
+}
+
+.contact-info{
+  min-width: 500px;
+
+  margin: 25px;
+}
+
+h3{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills{
+  min-width: 500px;
+  margin: 60px;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0,0.2);
+  display:inline-table;
+  justify-content: end;
+}
+
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    width: 0%;
+    display: none;
+  }
+  #Page-6{
+    margin-left: 0%;
+    display: block;
+  }
+
+
+}
+
+.dancing-contact{
+  font-size: 45px;
+  color: rgb(13, 252, 252);
+  padding: 4px ;
+  display: table-cell;
+  text-shadow: 0 15px 25px rgb(51, 248, 238);
+  text-transform: uppercase;
+}
+
+.dancing-contact:hover {
+  animation: dance-contact 0.5s ;
+  cursor: pointer;
+}
+
+@keyframes dance-contact{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-20px);
+  }
+  75%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.contact-form-name{
+  width: 300px;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 4vw;
+}
+
+.contact-form-email{
+  width: 300px;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 4vw;
+}
+
+.contact-form-subject{
+  width: 300px;
+  height: 40px;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 4vw;
+}
+
+.contact-form-message{
+  width: 300px;
+  height: 120px;
+  margin: 5px;
+  padding: 5px;
+  margin-left: 4vw;
+}
+
+.contact-submit-btn{
+  margin: 5px;
+  margin-left: 4vw;
+  padding: 5px;
+  height: 35px;
+  width: 80px;
+  font-size: 15px;
+  color: white;
+  background-color: green;
+  border: 2px solid green;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form{
+  margin: 10px;
+  display: flex;
+}
+
+
+
+.contact{
+  margin-right: 50px;
+}
+
+
+
+
+
+
